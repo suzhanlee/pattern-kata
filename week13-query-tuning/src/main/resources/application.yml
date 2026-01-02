@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: week13-query-tuning
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/artisan_kata?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
