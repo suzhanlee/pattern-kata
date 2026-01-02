@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: week11-message-queue
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+logging:
+  level:
+    org.springframework.amqp: debug
