@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: week16-profiling-load-test
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: info
