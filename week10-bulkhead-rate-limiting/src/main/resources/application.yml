@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: week10-bulkhead-rate-limiting
+
+resilience4j:
+  bulkhead:
+    instances:
+      default:
+        max-concurrent-calls: 10
+  ratelimiter:
+    instances:
+      default:
+        limit-for-period: 10
+        limit-refresh-period: 1s
+        timeout-duration: 0
+
+logging:
+  level:
+    io.github.resilience4j: debug
